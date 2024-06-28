@@ -1,0 +1,33 @@
+<div>
+  <nav>
+    <input
+      type="text"
+      placeholder="Search Name"
+      class="searchBar"
+      [formControl]="search"
+    />
+    <button (click)="togleAddUser()">Add</button>
+  </nav>
+  <table style="width: 100%" *ngIf="users.length; else noRecords">
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Discount</th>
+      <th>Total</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let user of listUsers; let i = index">
+      <td>{{ user.name }}</td>
+      <td>{{ user.price }}</td>
+      <td>{{ user.discount }}</td>
+      <td>{{ getTotalCalculation(+user.price, +user.discount) }}</td>
+      <td class="btnCol">
+        <button (click)="updateUserData(i)">Edit</button>
+        <button (click)="deleteUserData(i)">Delete</button>
+      </td>
+    </tr>
+  </table>
+  <ng-template #noRecords>No records found</ng-template>
+</div>
+
+<app-add-user *ngIf="isToggleAdd"></app-add-user>

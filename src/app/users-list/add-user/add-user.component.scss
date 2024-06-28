@@ -1,0 +1,43 @@
+.add-user-form-modal {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .user-form {
+    width: 30%;
+    padding: 20px;
+    background: #fff;
+
+    input {
+      width: 100%;
+      padding: 8px 20px;
+      margin: 12px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background: #66666698;
+      color: #000;
+      font-weight: bold;
+    }
+
+    button {
+      border-radius: 10px;
+      border: none;
+      width: 10%;
+      height: 30px;
+      background: #585858;
+      color: white;
+      font-weight: bold;
+      margin: 5px;
+      cursor: pointer;
+    }
+  }
+}

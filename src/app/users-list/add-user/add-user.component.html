@@ -1,0 +1,43 @@
+<div class="add-user-form-modal">
+    <div class="user-form">
+        <form [formGroup]="userForm">
+            <!-- <table>
+        <tr>
+            <th><label for="name">Name: </label></th>
+            <td><input type="text" formControlName="name" name="name" /></td>
+        </tr>
+        <tr>
+            <th><label for="price">Price: </label></th>
+            <td><input type="number" formControlName="price" name="price" /></td>
+        </tr>
+        <tr>
+            <th><label for="discount">Discount: </label></th>
+            <td><input type="number" formControlName="discount" name="discount" /></td>
+        </tr>
+        <tr>
+            <th><label for="total">Total: </label></th>
+            <td><input type="number" formControlName="total" name="total" readonly /></td>
+        </tr>
+    </table> -->
+            <div>
+                <label for="name">Name: </label>
+                <input type="text" formControlName="name" name="name" />
+            </div>
+            <div>
+                <label for="price">Price: </label>
+                <input type="number" formControlName="price" name="price" />
+            </div>
+            <div>
+                <label for="discount">Discount: </label>
+                <input type="number" formControlName="discount" name="discount" />
+            </div>
+            <div>
+                <label for="total">Total: </label>
+                <input type="number" formControlName="total" name="total" readonly />
+            </div>
+        </form>
+        <button (click)="addUser()" *ngIf="!isEdit">Add</button>
+        <button (click)="editUser()" *ngIf="isEdit">Edit</button>
+        <button (click)="closeBox()">Close</button>
+    </div>
+</div>

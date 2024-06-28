@@ -1,0 +1,54 @@
+div {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  padding: 4px;
+  width: 100%;
+
+  table {
+    border-collapse: collapse;
+
+    th,
+    td {
+      border: 1px solid black;
+      border-radius: 4px;
+    }
+
+    .btnCol{
+      width: 28%;
+      // display: flex;
+      button {
+        width: 100px;
+        margin: 5px;
+        background: #585858;
+      }
+    }
+  }
+  button {
+    align-self: self-end;
+    border-radius: 10px;
+    border: none;
+    width: 8%;
+    height: 30px;
+    background: #585858;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+    .searchBar{
+      width: 30%;
+      padding: 8px 13px;
+      border: 1px solid #474545;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  }
+
+}
