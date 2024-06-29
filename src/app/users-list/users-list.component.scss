@@ -1,34 +1,67 @@
+// div {
+//   display: flex;
+//   flex-direction: column;
+//   border: 1px solid;
+//   padding: 4px;
+//   width: 100%;
+
+//   table {
+//     border-collapse: collapse;
+
+//     th,
+//     td {
+//       border: 1px solid black;
+//       border-radius: 4px;
+//     }
+
+//     .btnCol{
+//       width: 28%;
+//       // display: flex;
+//       button {
+//         width: 100px;
+//         margin: 5px;
+//         background: #585858;
+//       }
+//     }
+//   }
+//   button {
+//     align-self: self-end;
+//     border-radius: 10px;
+//     border: none;
+//     width: 8%;
+//     height: 30px;
+//     background: #585858;
+//     color: white;
+//     font-weight: bold;
+//     margin-bottom: 5px;
+//     cursor: pointer;
+//   }
+
+//   nav{
+//     display: flex;
+//     justify-content: space-between;
+//     margin-bottom: 5px;
+
+//     .searchBar{
+//       width: 30%;
+//       padding: 8px 13px;
+//       border: 1px solid #474545;
+//       border-radius: 4px;
+//       box-sizing: border-box;
+//     }
+//   }
+
+// }
+
 div {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid;
-  padding: 4px;
-  width: 100%;
+  margin: 20px 5px;
+  font-size: 0.9rem;
 
-  table {
-    border-collapse: collapse;
-
-    th,
-    td {
-      border: 1px solid black;
-      border-radius: 4px;
-    }
-
-    .btnCol{
-      width: 28%;
-      // display: flex;
-      button {
-        width: 100px;
-        margin: 5px;
-        background: #585858;
-      }
-    }
-  }
   button {
     align-self: self-end;
     border-radius: 10px;
     border: none;
-    width: 8%;
+    width: 30%;
     height: 30px;
     background: #585858;
     color: white;
@@ -36,19 +69,44 @@ div {
     margin-bottom: 5px;
     cursor: pointer;
   }
-
-  nav{
+  nav {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
 
-    .searchBar{
-      width: 30%;
+    .searchBar {
+      width: 40%;
       padding: 8px 13px;
       border: 1px solid #474545;
       border-radius: 4px;
       box-sizing: border-box;
     }
+
+    // input {
+    //   margin-left: 5px;
+    // }
+
+    // button {
+    //   margin-right: 5px;
+    // }
   }
 
+  table {
+    border-collapse: collapse;
+    margin-top: 10px;
+
+    th,
+    td {
+      border: 1px solid black;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    .btnCol {
+      button {
+        // padding: 5px;
+        width: 40%;
+        margin: 5px;
+      }
+    }
+  }
 }
